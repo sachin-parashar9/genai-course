@@ -4,7 +4,7 @@ from openai import OpenAI
 
 load_dotenv()
 client = OpenAI(
-    api_key=os.getenv("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"),             # ← change to GROQ_API_KEY for Groq
+    api_key=os.getenv("OPENAI_API_KEY"),             # ← change to GROQ_API_KEY for Groq
 )
 
 MODEL = "gpt-4o-mini"
